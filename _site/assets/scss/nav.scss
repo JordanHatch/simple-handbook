@@ -1,0 +1,30 @@
+nav.global {
+  background: #eee;
+  padding-top: 1.5rem;
+  background: rgba(245, 245, 245, 0.9);
+
+  li {
+    a {
+      display: block;
+      padding: .5rem 1rem;
+      font-size: .85rem;
+      text-decoration: none;
+      color: #000;
+      line-height: 1.3;
+
+      &:hover {
+        background: rgba(225,225,225,1);
+      }
+    }
+
+    &.selected > a {
+      background: $navigation-selected-item-bg-color;
+      color: $navigation-selected-item-text-color;
+    }
+  }
+
+  li.has-children > ul {
+    padding-left: 1.5rem;
+  }
+
+}

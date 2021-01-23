@@ -19,6 +19,7 @@ module.exports = {
         sections.slice(0, -2).join('/')
       )
     },
-    title: data => data.title
+    title: data => data.title,
+    order: data => data.order
   }
 }
