@@ -27,6 +27,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.1.0",
     "@fortawesome/fontawesome-free": "^5.15.2",
     "reset-css": "^5.0.1"
   }
