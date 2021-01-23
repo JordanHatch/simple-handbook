@@ -1,12 +1,12 @@
 nav.global {
   background: #eee;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   background: rgba(245, 245, 245, 0.9);
 
   li {
     a {
       display: block;
-      padding: .5rem 1rem;
+      padding: .7rem 2rem .7rem 1rem;
       font-size: .85rem;
       text-decoration: none;
       color: #000;
@@ -51,17 +51,18 @@ nav.global {
       width: 1.5rem;
 
       position: absolute;
-      top: .41rem;
+      top: .61rem;
       right: .3rem;
 
       font-size: .8rem;
+      color: $navigation-unselected-chevron-color;
 
       padding: .25rem;
 
       cursor: pointer;
     }
 
-    &.selected .toggle {
+    &.selected > .toggle {
       color: $navigation-selected-item-text-color;
     }
 
