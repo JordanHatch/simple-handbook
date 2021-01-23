@@ -24,7 +24,55 @@ nav.global {
   }
 
   li.has-children > ul {
-    padding-left: 1.5rem;
+    margin-left: 1rem;
+    border-left: 1px solid #bbb;
+
+    li a {
+      font-size: .75rem;
+    }
+  }
+
+  li.has-children.collapsible {
+    position: relative;
+
+    &.closed > ul {
+      display: none;
+    }
+
+    &.open > ul {
+      display: block;
+    }
+
+    .toggle {
+      @extend .fas;
+
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+
+      position: absolute;
+      top: .41rem;
+      right: .3rem;
+
+      font-size: .8rem;
+
+      padding: .25rem;
+
+      cursor: pointer;
+    }
+
+    &.selected .toggle {
+      color: $navigation-selected-item-text-color;
+    }
+
+    &.closed .toggle {
+      @extend .fa-chevron-right;
+      right: .2rem;
+    }
+
+    &.open .toggle {
+      @extend .fa-chevron-down;
+    }
   }
 
 }
