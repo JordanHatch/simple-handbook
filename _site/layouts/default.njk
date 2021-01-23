@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <link href="{{ '/assets/css/dist.css' | url }}" type="text/css" rel="stylesheet">
+  <script src="{{ '/assets/js/dist.js' | url }}"></script>
+</head>
+
+<body>
+  <h1>Title</h1>
+
+  <nav>
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+  </nav>
+
+  <main>
+    <div class="breadcrumb">
+      {% set navPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+      {{ navPages | eleventyNavigationToHtml | safe }}
+    </div>
+
+    {{ content | safe }}
+  </main>
+</body>
+
+</html>
