@@ -12,6 +12,7 @@ It is built with the static-site generator [Eleventy](https://11ty.dev/) and is 
 * Automatic table of contents by adding the `[[toc]]` tag to a page
 * Custom callout boxes for information, warnings and alerts
 * Emoji support with shortcuts like `:100:` :100:
+* Responsive design that works on mobile
 
 # Getting started
 
