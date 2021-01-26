@@ -22,7 +22,9 @@
   <div class="container">
     <nav class="global">
       <h1>Menu</h1>
-      <ul><li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li><a href="/simple-handbook/examples/content/">Content</a></li></ul></li></ul>
+      <ul><li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li><a href="/simple-handbook/examples/callout_boxes/">Callout boxes</a></li>
+<li><a href="/simple-handbook/examples/content/">Content</a></li>
+<li><a href="/simple-handbook/examples/emoji/">Emoji</a></li></ul></li></ul>
     </nav>
 
     <main>
@@ -34,7 +36,17 @@
 
         <p><strong>simple-handbook</strong> is a ready-made static site to convert Markdown files into online documentation.</p>
 <p>It is built on the static-site generator <a href="https://11ty.dev/">Eleventy</a> and is preconfigured to automatically deploy to <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-<h1>Getting started</h1>
+<h1 id="features">Features</h1>
+<ul>
+<li>Automatic navigation and breadcrumbs based on file / folder structure</li>
+<li>Automatic table of contents by adding the <code>[[toc]]</code> tag to a page</li>
+<li>Custom callout boxes for information, warnings and alerts</li>
+<li>Emoji support with shortcuts like <code>:100:</code> 💯</li>
+</ul>
+<h1 id="getting-started">Getting started</h1>
+<div class="callout-warning"><p>Almost all the code to build the handbook lives in the <code>_site</code> directory, away from your content.</p>
+<p>To run or build the directory on your machine, you'll need to <code>cd</code> into this directory first.</p>
+</div>
 <p>To install dependencies:</p>
 <pre><code>cd _site &amp;&amp; npm install
 </code></pre>
