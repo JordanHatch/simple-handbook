@@ -18,7 +18,7 @@ jobs:
           cd _site/
           mkdir -p build/
           npm run clean
-          npx @11ty/eleventy --pathprefix=simple-handbook
+          npx @11ty/eleventy --pathprefix=${GITHUB_REPOSITORY#*/}
           webpack
 
       - name: Deploy to GitHub Pages 🚀
