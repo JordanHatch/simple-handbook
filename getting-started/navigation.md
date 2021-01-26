@@ -8,10 +8,10 @@ The navigation bar and breadcrumbs are set automaticaly, based on the folder str
 
 # Making pages appear in the navigation
 
-To make this work, there are two things you need to do:
+To make navigation work, there are two things you need to do:
 
 1. Always [set a page title](../page-title/)
-2. Always create an `index.md` file in each folder you create
+2. Always create an `index.md` page in each folder you create
 
 If your pages don't appear in the navigation bar, or if the title looks broken, check that you've done both of these.
 
