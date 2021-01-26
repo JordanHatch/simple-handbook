@@ -13,6 +13,10 @@ main {
     font-weight: 700;
     margin: 2rem 0 2.5rem;
     line-height: 1.25;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: 1rem 0 2rem;
+    }
   }
 
   h1, h2, h3 {
