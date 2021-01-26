@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Callout boxes - Simple Handbook</title>
+  <title>Set the title of your handbook - Simple Handbook</title>
   <link href="/simple-handbook/assets/css/dist.css" type="text/css" rel="stylesheet">
   <script src="/simple-handbook/assets/js/dist.js"></script>
 
@@ -26,8 +26,8 @@
 <li><a href="/simple-handbook/getting-started/manual/">Build and run the site manually</a></li>
 <li><a href="/simple-handbook/getting-started/navigation/">Configure the navigation bar and breadcrumbs</a></li>
 <li><a href="/simple-handbook/getting-started/page-title/">Set the title for a page</a></li>
-<li><a href="/simple-handbook/getting-started/site-title/">Set the title of your handbook</a></li></ul></li>
-<li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li class="selected"><a href="/simple-handbook/examples/callout_boxes/">Callout boxes</a></li>
+<li class="selected"><a href="/simple-handbook/getting-started/site-title/">Set the title of your handbook</a></li></ul></li>
+<li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li><a href="/simple-handbook/examples/callout_boxes/">Callout boxes</a></li>
 <li><a href="/simple-handbook/examples/content/">Content</a></li>
 <li><a href="/simple-handbook/examples/emoji/">Emoji</a></li></ul></li></ul>
     </nav>
@@ -36,36 +36,20 @@
       
   <div class="breadcrumbs">
     <ul><li><a href="/simple-handbook/">Home</a></li>
-<li><a href="/simple-handbook/examples/">Examples</a></li></ul>
+<li><a href="/simple-handbook/getting-started/">Getting started</a></li></ul>
   </div>
 
 
       <div class="content">
-        <h1 class="title">Callout boxes</h1>
+        <h1 class="title">Set the title of your handbook</h1>
 
-        <p>Simple Handbook extends Markdown to add callout boxes.</p>
-<p><div class="table-of-contents"><h1>On this page</h1><ul><li><a href="#information">Information</a></li><li><a href="#warning">Warning</a></li><li><a href="#alert">Alert</a></li></ul></div></p>
-<h1 id="information">Information</h1>
-<div class="callout-info"><p>A friendly message for your information</p>
-</div>
-<pre><code>::: info
-A friendly message for your information
-:::
+        <p>Your handbook's title appears in the header of the page, and in the <code>&lt;title&gt;</code> tag that displays in your browser's window or tab.</p>
+<p>By default, it's <em><strong>Simple Handbook</strong></em> but you can change this by editing the <code>_site/data/siteTitle.js</code> file.</p>
+<p>The file looks like this:</p>
+<pre><code>module.exports = &quot;Simple Handbook&quot;
 </code></pre>
-<h1 id="warning">Warning</h1>
-<div class="callout-warning"><p><strong>Warning:</strong> Proceed with caution</p>
-</div>
-<pre><code>::: warning
-**Warning:** Proceed with caution
-:::
-</code></pre>
-<h1 id="alert">Alert</h1>
-<div class="callout-alert"><p>Sorry Dave, I can't let you do that</p>
-</div>
-<pre><code>::: alert
-Sorry Dave, I can't let you do that
-:::
-</code></pre>
+<p>Remove <code>Simple Handbook</code> and add your title, being careful not to change the <code>&quot;</code> at either side.</p>
+<p>If you're using GitHub Pages, saving the file will automatically re-build your site with the updated title.</p>
 
 
         

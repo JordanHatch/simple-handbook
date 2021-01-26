@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Set the title for a page - Simple Handbook</title>
+  <link href="/simple-handbook/assets/css/dist.css" type="text/css" rel="stylesheet">
+  <script src="/simple-handbook/assets/js/dist.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/simple-handbook/">
+        <i class="icon"></i>
+        Simple Handbook
+      </a>
+    </h1>
+  </header>
+
+  <div class="container">
+    <nav class="global">
+      <h1>Menu</h1>
+      <ul><li class="has-children"><a href="/simple-handbook/getting-started/">Getting started</a><ul><li><a href="/simple-handbook/getting-started/github/">Deploy with GitHub Pages</a></li>
+<li><a href="/simple-handbook/getting-started/manual/">Build and run the site manually</a></li>
+<li><a href="/simple-handbook/getting-started/navigation/">Configure the navigation bar and breadcrumbs</a></li>
+<li class="selected"><a href="/simple-handbook/getting-started/page-title/">Set the title for a page</a></li>
+<li><a href="/simple-handbook/getting-started/site-title/">Set the title of your handbook</a></li></ul></li>
+<li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li><a href="/simple-handbook/examples/callout_boxes/">Callout boxes</a></li>
+<li><a href="/simple-handbook/examples/content/">Content</a></li>
+<li><a href="/simple-handbook/examples/emoji/">Emoji</a></li></ul></li></ul>
+    </nav>
+
+    <main>
+      
+  <div class="breadcrumbs">
+    <ul><li><a href="/simple-handbook/">Home</a></li>
+<li><a href="/simple-handbook/getting-started/">Getting started</a></li></ul>
+  </div>
+
+
+      <div class="content">
+        <h1 class="title">Set the title for a page</h1>
+
+        <p>You should set a title for every page. The value of the <code>title</code> setting is displayed on the page itself, in the navigation bar and breadcrumbs, and in the <code>&lt;title&gt;</code> tag of the page that appears in your web browser.</p>
+<p>To set the title, you need to add <em>front matter</em> at the top of your Markdown file. Front matter always starts and ends with three dashes (<code>---</code>).</p>
+<p>After the front matter, you can write your content as normal.</p>
+<p>Here's an example:</p>
+<pre><code>---
+title: Introduction
+---
+
+The content of your page goes here.
+</code></pre>
+<h1 id="writing-in-yaml">Writing in YAML</h1>
+<p>Everything within the <code>---</code> is considered the <a href="https://yaml.org/">YAML markup language</a>.</p>
+<p>You generally don't need to worry about this, but there's one gotcha: if your page title contains a colon (<code>:</code>), you'll need to wrap the whole title in quotes.</p>
+<p>For example:</p>
+<pre><code># This will cause an error
+---
+title: Star Wars: The Force Awakens
+---
+
+# This will work correctly
+---
+title: &quot;Star Wars: The Force Awakens&quot;
+---
+</code></pre>
+
+
+        
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
