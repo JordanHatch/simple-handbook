@@ -2,7 +2,7 @@
 title: Home
 ---
 
-**simple-handbook** is a ready-made static site to use Markdown files into online documentation. 
+**simple-handbook** is a ready-made static site to convert Markdown files into online documentation. 
 
 It is built on the static-site generator [Eleventy](https://11ty.dev/) and is preconfigured to automatically deploy to [GitHub Pages](https://pages.github.com/).
 
