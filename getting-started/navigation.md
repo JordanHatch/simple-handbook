@@ -19,7 +19,7 @@ If your pages don't appear in the navigation bar, or if the title looks broken, 
 
 You can optionally set the order of pages in the navigation yourself.
 
-To do this, include an `order` parameter for each page below [the title](../page-title/).
+To do this, include an `order` parameter for each page below [the title](../page-title/). Pages are displayed in ascending order.
 
 For example:
 
