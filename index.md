@@ -2,9 +2,13 @@
 title: Home
 ---
 
-**simple-handbook** is a ready-made static site to convert Markdown files into online documentation. 
+**Simple Handbook** is a ready-made static site template to create online documentation based on [Markdown](https://daringfireball.net/projects/markdown/) files. 
 
-It is built with the static-site generator [Eleventy](https://11ty.dev/) and is preconfigured to automatically deploy to [GitHub Pages](https://pages.github.com/).
+It's built with the static-site generator [Eleventy](https://11ty.dev/) and is preconfigured to automatically deploy to [GitHub Pages](https://pages.github.com/).
+
+It's designed for teams who want to write clear documentation in the open, writing Markdown without having to deal with code and templates. 
+
+Almost all the code stays out of the way, keeping your GitHub repository clean.
 
 # Features
 
@@ -16,26 +20,7 @@ It is built with the static-site generator [Eleventy](https://11ty.dev/) and is 
 
 # Getting started
 
-:::warning
-Almost all the code to build the handbook lives in the `_site` directory, away from your content.
+Read the guides on:
 
-To run or build the directory on your machine, you'll need to `cd` into this directory first.
-:::
-
-To install dependencies:
-
-```
-cd _site && npm install
-```
-
-To run the current site in development:
-
-```
-cd _site && npm run start
-```
-
-To build the site locally:
-
-```
-cd _site && npm run build
-```
+* how to [get started with GitHub Pages](./getting-started/github/)
+* how to [build and run the site on your own machine](./getting-started/manual/).
