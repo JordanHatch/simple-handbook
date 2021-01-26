@@ -1,5 +1,0 @@
----
-title: Section
----
-
-# Section homepage

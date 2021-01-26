@@ -36,16 +36,55 @@ main {
   }
 
   p {
-    margin: .75rem 0 1.3rem;
+    margin: .75rem 0 1.25rem;
   }
 
-  .content ul {
+  i, em {
+    font-style: italic;
+  }
+
+  b, strong {
+    font-weight: bold;
+  }
+
+  blockquote {
+    background: $blockquote-background-color;
+    border-left: 4px solid $base-color;
+    padding: .2rem 1.5rem;
+    margin: 1.5rem 0;
+
+    p {
+      margin: 1.25rem 0;
+    }
+  }
+
+  pre, code {
+    font-family: "Fira Mono", monospace;
+    font-size: .85rem;
+  }
+
+  pre {
+    background: #f3f2f1;
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .content ul, .content ol {
     padding-left: 1rem;
+    margin: 1.5rem 0;
 
     li {
-      list-style: disc;
-      padding-left: .75rem;
+      padding-left: .5rem;
+      margin: .075rem 0;
     }
+  }
+
+  .content ul li {
+    list-style: disc;
+  }
+
+  .content ol li {
+    list-style: decimal;
   }
 
   a, a:link, a:visited {
