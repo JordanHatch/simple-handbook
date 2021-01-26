@@ -5,6 +5,8 @@
   <title>{{ title }}</title>
   <link href="{{ '/assets/css/dist.css' | url }}" type="text/css" rel="stylesheet">
   <script src="{{ '/assets/js/dist.js' | url }}"></script>
+
+  <meta name="viewport" value="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -19,6 +21,7 @@
 
   <div class="container">
     <nav class="global">
+      <h1>Menu</h1>
       {{ collections.all | eleventyNavigation("/") | eleventyNavigationToHtml({
         listItemHasChildrenClass: "has-children",
         activeListItemClass: "selected",

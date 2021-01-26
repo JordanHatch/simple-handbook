@@ -46,3 +46,21 @@ main {
   height: 100%;
   padding: 1rem;
 }
+
+@media (max-width: $mobile-breakpoint) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav.global {
+    width: 100%;
+    max-width: 100%;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+
+    &.open {
+      min-height: 100%;
+    }
+  }
+}
+

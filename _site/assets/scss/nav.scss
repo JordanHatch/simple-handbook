@@ -32,14 +32,14 @@ nav.global {
     }
   }
 
-  li.has-children.collapsible {
+  .collapsible, &.collapsible {
     position: relative;
 
-    &.closed > ul {
+    &.has-children.closed > ul {
       display: none;
     }
 
-    &.open > ul {
+    &.has-children.open > ul {
       display: block;
     }
 
@@ -66,13 +66,44 @@ nav.global {
       color: $navigation-selected-item-text-color;
     }
 
-    &.closed .toggle {
+    &.closed > h1 > .toggle, &.closed > .toggle {
       @extend .fa-chevron-right;
       right: .2rem;
     }
 
-    &.open .toggle {
+    &.open > h1 > .toggle, &.open > .toggle {
       @extend .fa-chevron-down;
+    }
+  }
+
+  > h1 {
+    display: none;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    padding: 0rem;
+
+    > h1 {
+      display: block;
+      font-size: .85rem;
+      font-weight: bold;
+      background: #454862;
+      color: $base-text-color;
+      height: 2.5rem;
+      margin: 0;
+      padding: .75rem 2rem .7rem 1.5rem;
+    }
+
+    &.collapsible h1 > .toggle {
+      color: $base-text-color;
+    }
+
+    > ul > li > a {
+      padding-left: 1.5rem;
+    }
+
+    li.has-children > ul {
+      margin-left: 1.5rem;
     }
   }
 
