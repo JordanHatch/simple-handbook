@@ -42,11 +42,13 @@ nav.global {
   max-width: 20%;
   min-width: 15rem;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 main {
   flex: auto;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   padding: 1rem;
 }
 
