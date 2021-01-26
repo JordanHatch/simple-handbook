@@ -22,7 +22,7 @@ If you're on the free GitHub plan, only public repositories can be used with Git
 
 # Step 2: Confirm your site builds successfully
 
-Simple Handbook uses GitHub Actions to build and deploy your site. You should check that this project works before going any further.
+Simple Handbook uses GitHub Actions to build and deploy your site. You should check that the build process for your site works before going any further.
 
 In your new repository, open the _**Actions**_ tab. You should see a workflow listed under _**Build and Deploy**_.
 
