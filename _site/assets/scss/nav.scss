@@ -65,6 +65,12 @@ nav.global {
       cursor: pointer;
     }
 
+    @media (max-width: $mobile-breakpoint) {
+      &.has-children .toggle {
+        top: .9rem;
+      }
+    }
+
     &.selected > .toggle {
       color: $navigation-selected-item-text-color;
     }
@@ -102,7 +108,7 @@ nav.global {
     }
 
     > ul > li > a {
-      padding-left: 1.5rem;
+      padding: 1rem 2rem 1rem 1.5rem;
     }
 
     li.has-children > ul {
