@@ -25,10 +25,13 @@ nav.global {
 
   li.has-children > ul {
     margin-left: 1rem;
-    border-left: 1px solid #bbb;
 
     li a {
       font-size: .75rem;
+      border-left: 1px solid #bbb;
+    }
+    li.selected > a {
+      border-left-color: #b0ddda;
     }
   }
 
@@ -87,7 +90,7 @@ nav.global {
       display: block;
       font-size: .85rem;
       font-weight: bold;
-      background: #454862;
+      background: $subheader-bg-color;
       color: $base-text-color;
       height: 2.5rem;
       margin: 0;
