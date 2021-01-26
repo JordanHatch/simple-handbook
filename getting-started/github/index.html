@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Deploy with GitHub Pages - Simple Handbook</title>
+  <link href="/simple-handbook/assets/css/dist.css" type="text/css" rel="stylesheet">
+  <script src="/simple-handbook/assets/js/dist.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/simple-handbook/">
+        <i class="icon"></i>
+        Simple Handbook
+      </a>
+    </h1>
+  </header>
+
+  <div class="container">
+    <nav class="global">
+      <h1>Menu</h1>
+      <ul><li class="has-children"><a href="/simple-handbook/getting-started/">Getting started</a><ul><li class="selected"><a href="/simple-handbook/getting-started/github/">Deploy with GitHub Pages</a></li>
+<li><a href="/simple-handbook/getting-started/manual/">Build and run the site manually</a></li></ul></li>
+<li class="has-children"><a href="/simple-handbook/examples/">Examples</a><ul><li><a href="/simple-handbook/examples/callout_boxes/">Callout boxes</a></li>
+<li><a href="/simple-handbook/examples/content/">Content</a></li>
+<li><a href="/simple-handbook/examples/emoji/">Emoji</a></li></ul></li></ul>
+    </nav>
+
+    <main>
+      
+  <div class="breadcrumbs">
+    <ul><li><a href="/simple-handbook/">Home</a></li>
+<li><a href="/simple-handbook/getting-started/">Getting started</a></li></ul>
+  </div>
+
+
+      <div class="content">
+        <h1 class="title">Deploy with GitHub Pages</h1>
+
+        <p>Deploying with GitHub Pages is the quickest and easiest way to get started with Simple Handbook.</p>
+<p><div class="table-of-contents"><h1>On this page</h1><ul><li><a href="#step-1%3A-set-up-a-new-github-repository">Step 1: Set up a new GitHub repository</a></li><li><a href="#step-2%3A-confirm-your-site-builds-successfully">Step 2: Confirm your site builds successfully</a></li><li><a href="#step-3%3A-enable-github-pages">Step 3: Enable GitHub Pages</a></li><li><a href="#step-4%3A-clearing-out-the-default-content">Step 4: Clearing out the default content</a></li></ul></div></p>
+<h1 id="step-1%3A-set-up-a-new-github-repository">Step 1: Set up a new GitHub repository</h1>
+<p>To get started, <a href="https://github.com/JordanHatch/simple-handbook/generate">create a copy of this GitHub repository</a> into your own account or organisation.</p>
+<p>This will be used as the starting point for your content.</p>
+<p>Leave the option to <em>Include all branches</em> unchecked.</p>
+<div class="callout-warning"><p>If you're on the free GitHub plan, only public repositories can be used with GitHub Pages. If your repository is private, you'll need to deploy your site somewhere else.</p>
+<p><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages">More details in the GitHub documentation →</a></p>
+</div>
+<h1 id="step-2%3A-confirm-your-site-builds-successfully">Step 2: Confirm your site builds successfully</h1>
+<p>Simple Handbook uses GitHub Actions to build and deploy your site. You should check that this project works before going any further.</p>
+<p>In your new repository, open the <em><strong>Actions</strong></em> tab. You should see a workflow listed under <em><strong>Build and Deploy</strong></em>.</p>
+<p>It may take a few minutes for your site to build for the first time. If you see a green tick, you're good to go.</p>
+<h1 id="step-3%3A-enable-github-pages">Step 3: Enable GitHub Pages</h1>
+<p>GitHub Pages hosts the built version of your site.</p>
+<p>Every time your site changes, GitHub Actions builds a new version of your site and saves a copy of it to the <em><strong>gh-pages</strong></em> branch of your repository.</p>
+<div class="callout-warning"><p>Don't make manual changes to the files in the <em><strong>gh-pages</strong></em> branch. They'll be overwritten the next time your site is built.</p>
+</div>
+<p>You'll most likely have to turn GitHub Pages on for your repository. Open the <em><strong>Settings</strong></em> tab. The settings for GitHub Pages are near the bottom of the page.</p>
+<p>Under <em><strong>Source</strong></em>, select <em><strong>gh-pages</strong></em>, and press <em><strong>Save</strong></em>.</p>
+<p>Within a few minutes, your site be available to view. The website address of your GitHub Pages site will appear above these settings.</p>
+<h1 id="step-4%3A-clearing-out-the-default-content">Step 4: Clearing out the default content</h1>
+<p>By default, your new handbook will contain a copy of this documentation.</p>
+<div class="callout-info"><p>If you're new to Markdown, it may be useful to edit existing pages first to experiment with how it works.</p>
+</div>
+<p>When you're ready to start afresh, you can delete almost all the files in the repository.</p>
+<p>Be sure not to delete the following three files and directories:</p>
+<ul>
+<li>The <code>_site/</code> directory - this contains the code for your site</li>
+<li>The <code>.github/</code> directory - this tells GitHub how to build and deploy your site</li>
+<li>The <code>.eleventyignore</code> file - this is used in the build process to make sure only your content gets included</li>
+</ul>
+
+
+        
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
