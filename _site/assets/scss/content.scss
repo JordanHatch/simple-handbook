@@ -61,12 +61,20 @@ main {
   pre, code {
     font-family: "Fira Mono", monospace;
     font-size: .85rem;
+    background: #f6f6f6;
+  }
+
+  code {
+    padding: .25rem;
   }
 
   pre {
-    background: #f3f2f1;
     padding: 1rem;
     margin: 1.5rem 0;
+
+    code {
+      padding: 0;
+    }
   }
 
   .content ul, .content ol {
