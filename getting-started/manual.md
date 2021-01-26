@@ -36,4 +36,4 @@ Almost all the code to build the handbook lives in the `_site` directory, delibe
 You'll need to be in this directory to run `npm` commands.
 :::
 
-The development server runs on <https://localhost:3000/> and uses BrowserSync to automatically reload the site when you make a change.
+The development server runs on <http://localhost:3000/> and uses BrowserSync to automatically reload the site when you make a change.
