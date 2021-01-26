@@ -20,7 +20,7 @@ The content of your page goes here.
 
 # Writing in YAML
 
-Everything within the `---` is considered the [YAML markup language](https://yaml.org/).
+Everything within the `---` is considered [YAML markup language](https://yaml.org/).
 
 You generally don't need to worry about this, but there's one gotcha: if your page title contains a colon (`:`), you'll need to wrap the whole title in quotes.
 
