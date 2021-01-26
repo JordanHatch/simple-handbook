@@ -28,7 +28,7 @@ In your new repository, open the _**Actions**_ tab. You should see a workflow li
 
 It may take a few minutes for your site to build for the first time. If you see a green tick, you're good to go.
 
-# Step 3: Enable GitHub Pages
+# Step 3: Turn on GitHub Pages
 
 GitHub Pages hosts the built version of your site. 
 
@@ -42,7 +42,7 @@ You'll most likely have to turn GitHub Pages on for your repository. Open the _*
 
 Under _**Source**_, select _**gh-pages**_, and press _**Save**_. 
 
-Within a few minutes, your site be available to view. The website address of your GitHub Pages site will appear above these settings.
+Within a few minutes, your site will be available to view. The website address of your GitHub Pages site will appear above these settings.
 
 # Step 4: Clearing out the default content
 
