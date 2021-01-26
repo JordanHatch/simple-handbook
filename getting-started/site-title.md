@@ -12,6 +12,6 @@ The file looks like this:
 module.exports = "Simple Handbook"
 ```
 
-Remove `Simple Handbook` and add your title, being careful not to change the `"` at either side.
+Replace `Simple Handbook` with your site's title, being careful not to change the `"` at either side.
 
 If you're using GitHub Pages, saving the file will automatically re-build your site with the updated title.
