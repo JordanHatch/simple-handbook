@@ -7,13 +7,11 @@ const initCollapsibleNav = function () {
   const nav = document.querySelector('nav.global')
 
   const title = nav.querySelector('h1')
-  const toggle = createToggleEl(nav.classList, nav)
+  const toggle = createToggleEl(nav.classList, title)
 
   nav.classList.add('collapsible')
   nav.classList.add('closed')
   title.prepend(toggle)
-
-  // title.addEventListener('click', (e) => toggle.dispatchEvent(new CustomEvent('click')))
 }
 
 const initParentLists = function () {
