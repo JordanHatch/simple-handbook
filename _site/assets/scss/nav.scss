@@ -51,7 +51,7 @@ nav.global {
 
       display: inline-block;
       height: 1.5rem;
-      width: 1.5rem;
+      width: 2.25rem;
 
       position: absolute;
       top: .61rem;
@@ -61,6 +61,7 @@ nav.global {
       color: $navigation-unselected-chevron-color;
 
       padding: .25rem;
+      padding-left: 1rem;
 
       cursor: pointer;
     }
