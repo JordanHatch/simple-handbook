@@ -1,10 +1,11 @@
 ---
 title: Set the title for a page
+order: 2
 ---
 
 You should set a title for every page. The value of the `title` setting is displayed on the page itself, in the navigation bar and breadcrumbs, and in the `<title>` tag of the page that appears in your web browser.
 
-To set the title, you need to add _front matter_ at the top of your Markdown file. Front matter always starts and ends with three dashes (`---`). 
+To set the title, you need to add _front matter_ at the top of your Markdown file. Front matter always starts and ends with three dashes (`---`).
 
 After the front matter, you can write your content as normal.
 

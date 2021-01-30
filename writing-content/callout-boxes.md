@@ -1,8 +1,9 @@
 ---
-title: Callout boxes
+title: Using callout boxes
+order: 3
 ---
 
-Simple Handbook extends Markdown to add callout boxes.
+Simple Handbook adds custom Markdown for displaying callout boxes on a page. These are useful to display additional information, warnings or danger messages.
 
 [[toc]]
 

@@ -10,7 +10,7 @@ The navigation bar and breadcrumbs are set automaticaly, based on the folder str
 
 To make navigation work, there are two things you need to do:
 
-1. Always [set a page title](../page-title/)
+1. Always [set a page title](../../writing-content/page-title/)
 2. Always create an `index.md` page in each folder you create
 
 If your pages don't appear in the navigation bar, or if the title looks broken, check that you've done both of these.
@@ -19,7 +19,7 @@ If your pages don't appear in the navigation bar, or if the title looks broken, 
 
 You can optionally set the order of pages in the navigation yourself.
 
-To do this, include an `order` parameter for each page below [the title](../page-title/). Pages are displayed in ascending order.
+To do this, include an `order` parameter for each page below [the title](../../writing-content/page-title/). Pages are displayed in ascending order.
 
 For example:
 
@@ -37,7 +37,7 @@ order: 1
 ---
 ```
 
-The number you give to `order` can be as high or low as you like - they don't need to be consecutive. 
+The number you give to `order` can be as high or low as you like - they don't need to be consecutive.
 
 If you don't set an `order` for a page, it will be treated the same as if it were set to `0`.
 
